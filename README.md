@@ -90,6 +90,12 @@ In this exercise you will:
 
    * Run `./solutions/sample` and confirm it prints `Hello, PP7!`.
 6. **Explain** in comments or a short README how each stage transforms the code.
+   
+<summary>Preprocessing expands #include and macros into plain C code</summary>
+<summary>Compilation converts preprocessed code into assembly language</summary>
+<summary>Assembling translates asssembly into machine code</summary>
+<summary>Linking combines object files and libraries into a runnable executable</summary>
+<summary>Running excutes the final program</summary>
 
 ---
 
@@ -131,7 +137,10 @@ In this exercise you will:
    vim -c ":%s/printf/debug_printf/g" -c ":wq" solutions/debug_sample.c
    ```
 7. **Explain** each tool’s approach to regex-based search and replace, and when you might prefer one over the others.
-
+ <summary>grep search files or input for line matching a regex pattern and is used to locate lines.</summary>
+<summary>sed perform text transformations on input streams including regex substitions and is used to quickly fix many files without opening editors</summary>
+<summary>awk scanss input by lines and fields ,use regex to match patterns</summary>
+<summary>vim is a text editor with powerful regex searc and replace and is used fot manuel review,complex edits</summary>
 ---
 
 ### Task 3: Modular Linking with `extern`
@@ -176,6 +185,12 @@ In this exercise you will:
    * The role of `extern` declarations.
    * Why separating compilation can speed up builds.
    * How manual linking differs from letting `gcc` handle all steps in one command.
+     
+<summary> extern declarations are used to share functions across files</summary>
+<summary>separating compilation avoids recompilling the entire program when small changes occur</summary>
+<summary>Manual linking provides more control over each build step. Using a single gcc command compiles and links in one go but recompiles all files every time</summary>
+
+
 
 ---
 
